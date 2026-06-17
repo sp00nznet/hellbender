@@ -1,0 +1,143 @@
+
+========================================================================
+  PE Analysis: HELLBEND.EXE
+  Path: D:\recomp\pc\hellbender\analysis\HELLBEND.EXE
+  Size: 1,685,504 bytes
+========================================================================
+
+  Machine:       i386
+  Format:        PE32 (EXE)
+  Image Base:    0x00400000
+  Entry Point:   0x004ADD30 (RVA 0x000ADD30)
+  Linker:        3.10
+  Subsystem:     Windows GUI
+  Timestamp:     1996-09-04 22:02:18 UTC (0x322DFC6A)
+  Overlay:       61,440 bytes
+  Code Range:    0x00401000 - 0x004EAE69 (958,057 bytes)
+  Data Range:    0x004EB000 - 0x0087C27C (3,740,284 bytes)
+
+  Sections (6):
+    .text     VA 0x00001000  VSize 0x000E9E69  Raw 0x00000400  RSize 0x000EA000  [CODE|EXEC|READ]
+    .rdata    VA 0x000EB000  VSize 0x000148A8  Raw 0x000EA400  RSize 0x00014A00  [IDATA|READ]
+    .data     VA 0x00100000  VSize 0x00378360  Raw 0x000FEE00  RSize 0x00016C00  [IDATA|READ|WRITE]
+    .idata    VA 0x00479000  VSize 0x0000327C  Raw 0x00115A00  RSize 0x00003400  [IDATA|READ|WRITE]
+    .rsrc     VA 0x0047D000  VSize 0x0005A118  Raw 0x00118E00  RSize 0x0005A200  [IDATA|READ]
+    .reloc    VA 0x004D8000  VSize 0x0001975A  Raw 0x00173000  RSize 0x00019800  [IDATA|READ]
+
+  Imports: 507 functions from 11 DLLs
+
+    ADVAPI32.dll (14 functions):
+      0x0087991C  RegCloseKey
+      0x00879920  RegQueryValueExA
+      0x00879924  RegSetValueA
+      0x00879928  RegEnumValueA
+      0x0087992C  RegSetValueExA
+      0x00879930  SetFileSecurityA
+      0x00879934  GetFileSecurityA
+      0x00879938  RegOpenKeyA
+      0x0087993C  RegQueryValueA
+      0x00879940  RegDeleteKeyA
+      ... and 4 more
+
+    COMCTL32.dll (12 functions):
+      0x00879958  ImageList_Create
+      0x0087995C  ImageList_Merge
+      0x00879960  ImageList_LoadImageA
+      0x00879964  DestroyPropertySheetPage
+      0x00879968  PropertySheetA
+      0x0087996C  ordinal 17
+      0x00879970  ImageList_Read
+      0x00879974  ImageList_Write
+      0x00879978  ordinal 13
+      0x0087997C  CreatePropertySheetPageA
+      ... and 2 more
+
+    DDRAW.dll (2 functions):
+      0x0087998C  DirectDrawEnumerateA
+      0x00879990  DirectDrawCreate
+
+    GDI32.dll (110 functions):
+      0x00879998  CombineRgn
+      0x0087999C  GetMapMode
+      0x008799A0  SetRectRgn
+      0x008799A4  GetDeviceCaps
+      0x008799A8  BitBlt
+      0x008799AC  RealizePalette
+      0x008799B0  SetStretchBltMode
+      0x008799B4  DeleteObject
+      0x008799B8  CreatePalette
+      0x008799BC  PatBlt
+      ... and 100 more
+
+    KERNEL32.dll (146 functions):
+      0x00879B54  FreeLibrary
+      0x00879B58  InterlockedDecrement
+      0x00879B5C  GetFileAttributesA
+      0x00879B60  SetFileTime
+      0x00879B64  InterlockedIncrement
+      0x00879B68  VirtualProtect
+      0x00879B6C  lstrcmpiA
+      0x00879B70  GetFileTime
+      0x00879B74  GetDiskFreeSpaceA
+      0x00879B78  GlobalFlags
+      ... and 136 more
+
+    SHELL32.dll (6 functions):
+      0x00879DA0  DragAcceptFiles
+      0x00879DA4  DragFinish
+      0x00879DA8  DragQueryFileA
+      0x00879DAC  SHGetFileInfoA
+      0x00879DB0  ShellExecuteA
+      0x00879DB4  ExtractIconA
+
+    USER32.dll (179 functions):
+      0x00879DBC  GetNextDlgTabItem
+      0x00879DC0  CheckDlgButton
+      0x00879DC4  CreateDialogIndirectParamA
+      0x00879DC8  UnpackDDElParam
+      0x00879DCC  CheckRadioButton
+      0x00879DD0  GetDlgItemTextA
+      0x00879DD4  SetDlgItemInt
+      0x00879DD8  IsDlgButtonChecked
+      0x00879DDC  ScrollWindowEx
+      0x00879DE0  GetDlgItemInt
+      ... and 169 more
+
+    WINMM.dll (16 functions):
+      0x0087A08C  timeGetTime
+      0x0087A090  joyGetNumDevs
+      0x0087A094  waveOutOpen
+      0x0087A098  mciSendCommandA
+      0x0087A09C  joyGetDevCapsA
+      0x0087A0A0  joyGetPos
+      0x0087A0A4  timeBeginPeriod
+      0x0087A0A8  timeEndPeriod
+      0x0087A0AC  waveOutPrepareHeader
+      0x0087A0B0  waveOutClose
+      ... and 6 more
+
+    WINSPOOL.DRV (3 functions):
+      0x0087A0D0  ClosePrinter
+      0x0087A0D4  OpenPrinterA
+      0x0087A0D8  DocumentPropertiesA
+
+    comdlg32.dll (6 functions):
+      0x0087A0E0  GetFileTitleA
+      0x0087A0E4  PageSetupDlgA
+      0x0087A0E8  GetOpenFileNameA
+      0x0087A0EC  GetSaveFileNameA
+      0x0087A0F0  PrintDlgA
+      0x0087A0F4  CommDlgExtendedError
+
+    smackw32.dll (13 functions):
+      0x0087A0FC  ordinal 9
+      0x0087A100  ordinal 15
+      0x0087A104  ordinal 22
+      0x0087A108  ordinal 7
+      0x0087A10C  ordinal 1
+      0x0087A110  ordinal 10
+      0x0087A114  ordinal 14
+      0x0087A118  ordinal 8
+      0x0087A11C  ordinal 28
+      0x0087A120  ordinal 17
+      ... and 3 more
